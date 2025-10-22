@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Open Unread PRs</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- 未読PR数表示 -->
+      <div class="pr-count">
+        未読PR: <span id="count">-</span>件
+      </div>
+
+      <!-- メインボタン -->
+      <button id="openPRs" class="primary-btn">
+        🔗 一括で開く
+      </button>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
