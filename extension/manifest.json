@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Open Unread PRs",
+  "version": "1.0.0",
+  "description": "GitHubの未読PRを一括で開くChrome拡張機能",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://github.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/pulls*", "https://github.com/*/pulls*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

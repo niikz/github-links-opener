@@ -1,0 +1,213 @@
+/* popup.css - ポップアップのスタイル */
+
+/* ========================================
+   基本設定
+   ======================================== */
+
+body {
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #24292f;
+  background: #ffffff;
+}
+
+/* ========================================
+   メイン画面
+   ======================================== */
+
+.container {
+  padding: 16px;
+}
+
+/* 未読PR数表示 */
+.pr-count {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #24292f;
+}
+
+.pr-count #count {
+  color: #0969da;
+  font-size: 20px;
+}
+
+/* メインボタン */
+.primary-btn {
+  width: 100%;
+  padding: 12px;
+  background: #238636;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.primary-btn:hover {
+  background: #2ea043;
+}
+
+.primary-btn:active {
+  background: #1f7a34;
+}
+
+/* 区切り線 */
+.divider {
+  height: 1px;
+  background: #d0d7de;
+  margin: 16px 0;
+}
+
+/* 設定リンク */
+.settings-link {
+  display: block;
+  text-align: center;
+  color: #656d76;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 4px;
+  transition: color 0.2s;
+}
+
+.settings-link:hover {
+  color: #0969da;
+}
+
+/* ========================================
+   設定画面
+   ======================================== */
+
+.settings-panel {
+  padding: 16px;
+}
+
+.settings-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d0d7de;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #0969da;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 8px;
+  margin-right: 8px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.back-btn:hover {
+  background: #f6f8fa;
+}
+
+.settings-header h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  flex: 1;
+}
+
+/* 設定項目 */
+.setting-group {
+  margin-bottom: 16px;
+}
+
+.setting-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #24292f;
+}
+
+.setting-group input[type='number'] {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.setting-group input[type='number']:focus {
+  outline: none;
+  border-color: #0969da;
+  box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.1);
+}
+
+/* チェックボックスグループ */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-group input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.checkbox-group label {
+  margin: 0;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+/* 説明テキスト */
+.description {
+  font-size: 12px;
+  color: #656d76;
+  margin-top: 4px;
+}
+
+/* 保存ボタン */
+.save-btn {
+  width: 100%;
+  padding: 8px 12px;
+  background: #238636;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.save-btn:hover {
+  background: #2ea043;
+}
+
+.save-btn:active {
+  background: #1f7a34;
+}
+
+/* ステータスメッセージ */
+.status {
+  margin-top: 12px;
+  padding: 8px;
+  background: #ddf4ff;
+  border: 1px solid #54aeff;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #0969da;
+  text-align: center;
+  display: none;
+}
+
+.status.show {
+  display: block;
+}
