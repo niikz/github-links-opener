@@ -12,9 +12,9 @@ https://github.com/pulls
 
 ### 2. コンソールを開く
 
-- **Chrome/Edge**: `F12` または `Cmd+Option+J` (Mac) / `Ctrl+Shift+J` (Windows)
-- **Firefox**: `F12` または `Cmd+Option+K` (Mac) / `Ctrl+Shift+K` (Windows)
-- **Safari**: `Cmd+Option+C` (事前に「開発」メニューを有効化)
+- Chrome/Edge: `F12` または `Cmd+Option+J` (Mac) / `Ctrl+Shift+J` (Windows)
+- Firefox: `F12` または `Cmd+Option+K` (Mac) / `Ctrl+Shift+K` (Windows)
+- Safari: `Cmd+Option+C` (事前に「開発」メニューを有効化)
 
 ### 3. コードをコピー&ペースト
 
@@ -92,9 +92,8 @@ confirmBeforeOpen: false,  // true → false に変更
 
 より便利に使いたい場合は、以下のバージョンもあります：
 
-- **ブックマークレット版**: ブックマークに登録して使える
-- **Userscript版**: 自動でボタンが追加される（Tampermonkey必要）
-- **Chrome拡張版**: ポップアップUIから操作可能
+- ブックマークレット版: ブックマークに登録して使える
+- Chrome拡張版: ポップアップUIから操作可能
 
 詳細は [README.md](../README.md) を参照してください。
 
